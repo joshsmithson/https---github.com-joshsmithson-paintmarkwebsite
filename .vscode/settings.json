@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 600,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden"
+}
