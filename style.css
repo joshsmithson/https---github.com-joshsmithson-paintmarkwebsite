@@ -247,7 +247,7 @@ p{
 .carousel-tracker-container {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     display: flex;
     margin: 0px;
     overflow: hidden;
@@ -259,29 +259,31 @@ p{
     padding: 0;
     margin: 0;
     position: relative;
-    object-fit: cover;
-    transition: transform 250ms ease-in;
+    transition: transform 3000ms ease-in-out;
+
 }
-.carousel-slide,
-.carousel-slide-current-slide{
+
+.carousel-slide{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     object-fit: cover;
     z-index: 0;
-
+    
 }
-
+.carousel-slide-current-slide {
+    z-index: 1;
+}
 .carousel-slide img{
     width: 100%;
     height: 100%;
     border-radius: 0;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .carousel-button-left,
