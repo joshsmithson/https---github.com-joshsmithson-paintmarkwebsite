@@ -75,6 +75,18 @@
             <h3>AFTER</h3>
         </div>
       </div>
+      <div class="examples-col">
+        <img src="images/before2.jpeg">
+        <div class="layer">
+          <h3>BEFORE</h3>
+        </div>
+      </div>
+        <div class="examples-col">
+          <img src="images/after2.jpeg">
+          <div class="layer">
+            <h3>AFTER</h3>
+        </div>
+      </div>
     </div>
 
   </section>
@@ -149,12 +161,103 @@
     </div>
 </div>
 
+</section>
+<section class="cta">
+  <h1>Get in touch with us today to get your free quote</h1>
+  <a href="" class="hero-btn">CONTACT US</a>
+</section>
 
-
-
-
-
-
+<!----------Footer------------>
+<section class="footer">
+  <div class="footer-row">
+    <div class="footer-column">
+      <h4>Key Services</h4>
+      <div class="footer-icon">
+        <i class="fa fa-lightbulb-o"></i>
+      </div>
+      <div class="footer-text">
+        <p>Interior Painting & <br>Decorating</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-paint-brush"></i>
+      </div>
+      <div class="footer-text">
+        <p>Exterior Painting & <br>Decorating</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-handshake-o"></i>
+      </div>
+      <div class="footer-text">
+        <p>Extensive preparation<br>including, stripping and <br>lining applications</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-gavel"></i>
+      </div>
+      <div class="footer-text">
+        <p>Property Maintenance</p>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h4>Contact Info</h4>
+      <div class="footer-icon">
+        <i class="fa fa-phone"></i>
+      </div>
+      <div class="footer-text">
+        <p>01825 627566</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-mobile fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>07757 068371</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-envelope fa-sm"></i>
+      </div>
+      <div class="footer-text">
+        <p>paintmarkdecorating@yahoo.com</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-home fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>Mark Connelly<br>6 New Heritage Way<br>North Chailey<br>Lewes, East Sussex<br>BN8 4GD</p>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h4>Areas We Cover</h4>
+      <div class="footer-icon">
+        <i class="fa fa-phone"></i>
+      </div>
+      <div class="footer-text">
+        <p>East Sussex</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-mobile fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>Surrey</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-envelope fa-sm"></i>
+      </div>
+      <div class="footer-text">
+        <p>West Sussex</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-home fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>Kent</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-home fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>London</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-------JavaScript for Toggle Menu------->
@@ -211,8 +314,6 @@
       const currentSlide = track.querySelector('.carousel-slide-current-slide');
       const prevSlide = currentSlide.previousElementSibling;
       moveToSlide(track, currentSlide, prevSlide);
-      console.log(nextButton);
-      console.log(prevButton);
       console.log(track);
       console.log(slides);
 
@@ -223,15 +324,22 @@
       const nextSlide = currentSlide.nextElementSibling;
 
       moveToSlide(track, currentSlide, nextSlide);
-      console.log(nextButton);
-      console.log(prevButton);
       console.log(track);
       console.log(slides);
 
-    })
-    // when i click the nav indicators, move to that slide
+    });
 
-  })
+
+    // when i click the nav indicators, move to that slide
+    dotsNav.addEventListener('click', e => {
+      // what indicator was clicked on?
+      const targetDot = e.target.closest('button');
+      if (!targetDot) return;
+      const currentSlide = track.querySelector('.carousel-slide-current-slide');
+      const currentDot = dotsNav.querySelector('.carousel-slide-current-slide');
+      const targetIndex = dots.findIndex(dot => dot === targetDot)
+    })
+  });
 
 
   
