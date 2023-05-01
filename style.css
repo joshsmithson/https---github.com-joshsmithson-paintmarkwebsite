@@ -490,4 +490,5 @@ p{
     outline: none;
     border: 1px solid #f6e58d;
     box-sizing: border-box;
+    resize: none;
 }
