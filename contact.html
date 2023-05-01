@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
-  <section class="header">
+  <section class="sub-header">
     <nav>
       <a href="index.html"><img src="images/logo.png"></a>
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
-          <li><a href="index">HOME</a></li>
+          <li><a href="index.html">HOME</a></li>
           <li><a href="">SERVICES WE OFFER</a></li>
           <li><a href="">GALLERY</a></li>
           <li><a href="contact.html">CONTACT US</a></li>
@@ -25,141 +25,57 @@
       </div>
       <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-    
-  <div class="text-box">
-    <h1>Professional Painting & Decorating Service</h1>
-    <p>Covering Surrey, East Sussex, West Sussex, Kent & London</p>
-    <a href="" class="hero-btn">Get In Touch</a>
+    <h1>Contact Us</h1>
+
+  </section>
+
+<!-- contact us -->
+<section class="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10047.440522940293!2d-0.015688!3d50.9817759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875fc3caaeb4977%3A0xae8db421ee9c7508!2sPaintMARK!5e0!3m2!1sen!2suk!4v1682964224438!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa fa-home"></i>
+        <span>
+          <h5>6 New Heritage Way</h5>
+          <p>North Chailey</p>
+          <p>Lewes, East Sussex</p>
+          <p>BN8 4GD</p>
+        </span>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <span>
+          <h5>01825 627566</h5>
+          <p>Monday - Friday</p>
+        </span>
+        </span>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <span>
+          <h5>paintmarkdecorating@yahoo.com</h5>
+          <p>Email us your enquiry</p>
+        </span>
+      </div>
+    </div>
+    <div class="contact-col">
+      <form action="formhandler.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <input type="text" name="subject" placeholder="Enter your subject" required>
+        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn yellow-btn">Send Enquiry</button>
+      </form>
+    </div>
   </div>
 
 
 
-  </section>
-
-<!--------Content-------->
-
-  <section class="content">
-    <h1>Services We Offer</h1>
-    <p>We specialise in all aspects of Interior and Exterior painting and decorating, priding ourselves of a highly quality, trustworthly and reliable service. Whether you're looking to refresh your home's look or give your business a professional makeover, we have the skills and expertise to make it happen.<br><br>Utilising previous extensive experience, PaintMark Decorating was established by Mark Connelly in 2010. Based in North Chailey, East Sussex we cover a broad area with customers spanning Surrey, East sussex, Kent, West Sussex and London.
-    </p>
-
-    <div class="row">
-      <div class="content-col">
-        <h3>Painting & Decorating</h3>
-        <p>PaintMARK provide domestic and commercial painting and decorating services of high quality and at affordable and competitive rates.</p>
-      </div>
-      <div class="content-col">
-        <h3>Property Maintenance</h3>
-        <p>PaintMARK can assist in the design as well as the installation of your new room. We will ensure that your room is completed to meet your exact specifications, budget and timescale.</p>
-      </div>
-    </div>
-
-  </section>
-
-<!----Examples---->
-
-  <section class="examples">
-    <h1>Our Previous Work</h1>
-    <p>See some examples of our previous work</p>
-
-    <div class="row">
-      <div class="examples-col">
-        <img src="images/before2.jpeg">
-        <div class="layer">
-          <h3>BEFORE</h3>
-        </div>
-      </div>
-        <div class="examples-col">
-          <img src="images/after2.jpeg">
-          <div class="layer">
-            <h3>AFTER</h3>
-        </div>
-      </div>
-      <div class="examples-col">
-        <img src="images/before2.jpeg">
-        <div class="layer">
-          <h3>BEFORE</h3>
-        </div>
-      </div>
-        <div class="examples-col">
-          <img src="images/after2.jpeg">
-          <div class="layer">
-            <h3>AFTER</h3>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-<!-------Testimonials-------->
-
-<section class="testimonials">
-  <h1>What Our Customers Say</h1>
-  <p>We take great pride in the positive feedback we've received from our customers. Many have commented on the attention to detail and quality of our work, while others have appreciated our professionalism and reliability.<br>But don't take our word for it, read on to see what our clients have to say about their experience with us. We hope that their stories will inspire confidence and trust in our abilities and give you a sense of what to expect when working with our team.</p>
-
-  <div class="testimonials-row">
-    <div class="testimonials-col">
-        <div class="carousel">
-            <button class="carousel-button-left">
-                <i class="fa fa-chevron-left"></i>
-            </button>
-            <div class="carousel-tracker-container">
-                <ul class="carousel-track">
-                    <li class="carousel-slide current-slide">
-                        <img src="images/testimonialafter1.jpeg">
-                    </li>
-                    <li class="carousel-slide">
-                        <img src="images/testimonialafter1.jpeg">
-                    </li>
-                </ul>
-            </div>
-            <button class="carousel-button-right">
-                <i class="fa fa-chevron-right"></i>
-            </button>
-          <div class="carousel-nav">
-            <button class="carousel-indicator-current-slide"></button>
-            <button class="carousel-indicator"></button>
-          </div>
-        </div>
-        <div>
-            <p>We are so impressed with the quality of the work and how thoughtful you were throughout the process.</p>
-            <h3>Mr & Mrs P Wintle (Caterham)</h3>
-        </div>
-    </div>
-    <div class="testimonials-col">
-        <div class="carousel">
-            <button class="carousel-button-left">
-                <i class="fa fa-chevron-left"></i>
-            </button>
-            <div class="carousel-tracker-container">
-                <ul class="carousel-track">
-                    <li class="carousel-slide current-slide">
-                        <img src="images/testimonialbefore2.jpeg">
-                    </li>
-                    <li class="carousel-slide">
-                        <img src="images/testimonialafter2.jpeg">
-                    </li>
-                </ul>
-            </div>
-            <button class="carousel-button-right">
-                <i class="fa fa-chevron-right"></i>
-            </button>
-          <div class="carousel-nav">
-            <button class="carousel-indicator current-slide"></button>
-            <button class="carousel-indicator"></button>
-          </div>
-        </div>
-        <div>
-            <p>I was so impressed with Mark's professionalism, efficience and creativity. Highly Recommended!</p>
-            <h3>Josh Smithson</h3>
-        </div>
-    </div>
-</div>
-
-</section>
-<section class="cta">
-  <h1>Get in touch with us today to get your free quote</h1>
-  <a href="" class="hero-btn">CONTACT US</a>
 </section>
 
 <!----------Footer------------>

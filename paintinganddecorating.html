@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paint Mark Decorating</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="">SERVICES WE OFFER</a></li>
+          <li><a href="">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="">TESTIMONIALS</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Painting And Decorating</h1>
+
+  </section>
+
+<!-- painting and decorating content -->
+<section class="painting-and-decorating">
+  <div class="row">
+    <div class="painting-and-decorating-col">
+      <h1>All interior / inside painting & decorating</h1>
+      <p>Where specified and agreed, this includes the painting of ceilings, walls, woodwork (including doors and frames, windows and frames, dado and picture rails and skirting), any plaster mouldings like cornices or ceiling roses, fire surrounds, cupboards including louvre doors, built in units or wardrobes and floors. Doors, skirting and architraves as well as many other items of woodwork can be stained or varnished.</p>
+      <h1>Paper Stripping and Paperhanging</h1>
+      <p>We can hang lining paper to help hide rough walls and then decorate over this or indeed hand patterened paper over the top. We can hang the lining paper vertically or horizontally to suit either purpose.</p>
+      
+    </div>
+    <div class="painting-and-decorating-col">
+      <img src="images/testimonialafter1.jpeg">
+    </div>
+  </div>
+
+
+</section>
+
+<!----------Footer------------>
+<section class="footer">
+  <div class="footer-row">
+    <div class="footer-column">
+      <h4>Key Services</h4>
+      <div class="footer-icon">
+        <i class="fa fa-lightbulb-o"></i>
+      </div>
+      <div class="footer-text">
+        <p>Interior Painting & <br>Decorating</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-paint-brush"></i>
+      </div>
+      <div class="footer-text">
+        <p>Exterior Painting & <br>Decorating</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-handshake-o"></i>
+      </div>
+      <div class="footer-text">
+        <p>Extensive preparation<br>including, stripping and <br>lining applications</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-gavel"></i>
+      </div>
+      <div class="footer-text">
+        <p>Property Maintenance</p>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h4>Contact Info</h4>
+      <div class="footer-icon">
+        <i class="fa fa-phone"></i>
+      </div>
+      <div class="footer-text">
+        <p>01825 627566</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-mobile fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>07757 068371</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-envelope fa-sm"></i>
+      </div>
+      <div class="footer-text">
+        <p>paintmarkdecorating@yahoo.com</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-home fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>Mark Connelly<br>6 New Heritage Way<br>North Chailey<br>Lewes, East Sussex<br>BN8 4GD</p>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h4>Areas We Cover</h4>
+      <div class="footer-icon">
+        <i class="fa fa-phone"></i>
+      </div>
+      <div class="footer-text">
+        <p>East Sussex</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-mobile fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>Surrey</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-envelope fa-sm"></i>
+      </div>
+      <div class="footer-text">
+        <p>West Sussex</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-home fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>Kent</p>
+      </div>
+      <div class="footer-icon">
+        <i class="fa fa-home fa-lg"></i>
+      </div>
+      <div class="footer-text">
+        <p>London</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------JavaScript for Toggle Menu------->
+<script>
+
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+
+
+</script>
+
+
+</body>
+</html>
