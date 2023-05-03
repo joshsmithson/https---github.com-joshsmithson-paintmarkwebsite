@@ -99,60 +99,10 @@
 
   <div class="testimonials-row">
     <div class="testimonials-col">
-        <div class="carousel">
-            <button class="carousel-button-left">
-                <i class="fa fa-chevron-left"></i>
-            </button>
-            <div class="carousel-tracker-container">
-                <ul class="carousel-track">
-                    <li class="carousel-slide current-slide">
-                        <img src="images/testimonialafter1.jpeg">
-                    </li>
-                    <li class="carousel-slide">
-                        <img src="images/testimonialafter1.jpeg">
-                    </li>
-                </ul>
-            </div>
-            <button class="carousel-button-right">
-                <i class="fa fa-chevron-right"></i>
-            </button>
-          <div class="carousel-nav">
-            <button class="carousel-indicator-current-slide"></button>
-            <button class="carousel-indicator"></button>
-          </div>
-        </div>
-        <div>
-            <p>We are so impressed with the quality of the work and how thoughtful you were throughout the process.</p>
-            <h3>Mr & Mrs P Wintle (Caterham)</h3>
-        </div>
+        
     </div>
     <div class="testimonials-col">
-        <div class="carousel">
-            <button class="carousel-button-left">
-                <i class="fa fa-chevron-left"></i>
-            </button>
-            <div class="carousel-tracker-container">
-                <ul class="carousel-track">
-                    <li class="carousel-slide current-slide">
-                        <img src="images/testimonialbefore2.jpeg">
-                    </li>
-                    <li class="carousel-slide">
-                        <img src="images/testimonialafter2.jpeg">
-                    </li>
-                </ul>
-            </div>
-            <button class="carousel-button-right">
-                <i class="fa fa-chevron-right"></i>
-            </button>
-          <div class="carousel-nav">
-            <button class="carousel-indicator current-slide"></button>
-            <button class="carousel-indicator"></button>
-          </div>
-        </div>
-        <div>
-            <p>I was so impressed with Mark's professionalism, efficience and creativity. Highly Recommended!</p>
-            <h3>Josh Smithson</h3>
-        </div>
+        
     </div>
 </div>
 
@@ -268,102 +218,6 @@
     navLinks.style.right = "-200px";
   }
 
-
-</script>
-
-<!------JavaScript for Carousel------>
-<script>
-  // get all the carousels on the page
-  const carousels = document.querySelectorAll('.carousel');
-  // loop through each carousel
-  carousels.forEach(carousels => {
-    const track = carousels.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const nextButton = carousels.querySelector('.carousel-button-right');
-    const prevButton = carousels.querySelector('.carousel-button-left');
-    const dotsNav = carousels.querySelector('.carousel-nav');
-    dotsNav.style.display = 'block';
-    const dots = Array.from(dotsNav.children);
-    dots[0].classList.add('current-slide');
-    console.log(dotsNav.querySelector('current-slide'));
-
-    const slideWidth = slides[0].getBoundingClientRect().width;
-
-    // arrange the slides next to one another
-    const setSlidePosition = (slide, index) => {
-      slide.style.left = slideWidth * index + 'px';
-    };
-    slides.forEach(setSlidePosition);
-
-    const moveToSlide = (track, currentSlide, targetSlide) => {
-      track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-      currentSlide.classList.remove('current-slide');
-      targetSlide.classList.add('current-slide');
-    }
-
-    const updateDots = (currentDot, targetDot) => {
-      currentDot.classList.remove('current-slide');
-      targetDot.classList.add('current-slide');
-    }
-
-    const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
-      if (targetIndex === 0) {
-        prevButton.classList.add('is-hidden');
-        nextButton.classList.remove('is-hidden');
-        
-      } else if (targetIndex === slides.length - 1) {
-          prevButton.classList.remove('is-hidden');
-          nextButton.classList.add('is-hidden');
-      } else {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.remove('is-hidden');
-      }
-    }
-
-    prevButton.classList.add('is-hidden');
-
-
-    // when i click left, move slides to the left
-    prevButton.addEventListener('click', e => {
-      const currentSlide = track.querySelector('.current-slide');
-      const prevSlide = currentSlide.previousElementSibling;
-      const currentDot = dotsNav.querySelector('.current-slide')
-      const prevDot = currentDot.previousElementSibling;
-      const targetIndex = slides.findIndex(slide => slide === prevSlide);
-      moveToSlide(track, currentSlide, prevSlide);
-      updateDots (currentDot, prevDot);
-      hideShowArrows (slides, prevButton, prevButton, targetIndex);
-
-    });
-    // when i click right, move slides to the right
-    nextButton.addEventListener('click', e => {
-      const currentSlide = track.querySelector('.current-slide');
-      const nextSlide = currentSlide.nextElementSibling;
-      const currentDot = dotsNav.querySelector('.current-slide');
-      const nextDot = currentDot.nextElementSibling;
-      const targetIndex = slides.findIndex(slide => slide === nextSlide);
-      moveToSlide(track, currentSlide, nextSlide);
-      updateDots (currentDot, nextDot);
-      hideShowArrows (slides, prevButton, nextButton, targetIndex);
-    });
-
-
-    // when i click the nav indicators, move to that slide
-    dotsNav.addEventListener('click', e => {
-      // what indicator was clicked on?
-      const targetDot = e.target.closest('button');
-      if (!targetDot) return;
-      const currentSlide = track.querySelector('.current-slide');
-      const currentDot = dotsNav.querySelector('.current-slide');
-      const targetIndex = dots.findIndex(dot => dot === targetDot);
-      const targetSlide = slides[targetIndex];
-
-      moveToSlide(track, currentSlide, targetSlide);
-      updateDots (currentDot, targetDot);
-      hideShowArrows (slides, prevButton, nextButton, targetIndex);
-
-      });
-  });
 
 </script>
 
