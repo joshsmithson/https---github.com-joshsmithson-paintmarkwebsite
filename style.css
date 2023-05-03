@@ -308,7 +308,7 @@ p{
     font-weight: 500;
     color: #f6e58d;
 }
-.testimonials-col:hover, .testimonials-col:focus, .card-inner{
+.testimonials-col:hover .card-inner{
     transform: rotateY(180deg);
 }
 
