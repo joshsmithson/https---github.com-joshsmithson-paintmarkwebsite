@@ -272,7 +272,9 @@ p{
 .front1 h2{
     font-weight: 500;
     color: #f6e58d;
+    background-color: rgba(246, 229, 141, 0.005);
 }
+
 .back1 {
     background: url(./images/after1.jpg);
     background-size: cover;
