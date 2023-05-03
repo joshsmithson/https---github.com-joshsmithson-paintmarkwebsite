@@ -270,9 +270,9 @@ p{
     background-position: center;
 }
 .front1 h2{
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 400;
     color: #f6e58d;
-    background-color: rgba(246, 229, 141, 0.005);
 }
 
 .back1 {
@@ -282,6 +282,7 @@ p{
     transform: rotateY(180deg);
 }
 .back1 h2{
+    font-size: 38px;
     font-weight: 500;
     color: #f6e58d;
 }
@@ -301,6 +302,7 @@ p{
     background-position: center;
 }
 .front2 h2{
+    font-size: 38px;
     font-weight: 500;
     color: #f6e58d;
 }
@@ -311,6 +313,7 @@ p{
     transform: rotateY(180deg);
 }
 .back2 h2{
+    font-size: 38px;
     font-weight: 500;
     color: #f6e58d;
 }
