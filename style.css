@@ -356,7 +356,15 @@ p{
     flex-direction: column;
     align-items: stretch;
 }
-  
+@media (max-width:880px){
+    .footer-column{
+        align-items: center;
+        padding: 20px;
+    }
+    .footer-text p{
+        word-wrap: break-word;
+    }
+}
 .footer-row {
     display: flex;
     flex-direction: row;
