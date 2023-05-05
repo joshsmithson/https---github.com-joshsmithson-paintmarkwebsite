@@ -235,7 +235,7 @@ p{
     height: 600px;
     perspective: 1500px;
 }
-@media (max-width: 800px){
+@media (max-width: 900px){
     .testimonials-col{
         height: 300px;
     }
@@ -248,7 +248,7 @@ p{
 }
 
 .card-inner {
-    width: 100%;
+    max-width: 80%;
     height: 100%;
     position: relative;
     transition: transform 2s;
