@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <body>
-  <section class="header">
+  <section class="sub-header">
     <nav>
       <a href="index.html"><img src="images/logo.png"></a>
       <div class="nav-links" id="navLinks">
@@ -25,105 +25,33 @@
       </div>
       <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
-    
-  <div class="text-box">
-    <h1>Professional Painting & Decorating Service</h1>
-    <p>Covering Surrey, East Sussex, West Sussex, Kent & London</p>
-    <a href="contact.html" class="hero-btn">Get In Touch</a>
+    <h1>Contact Us</h1>
+
+  </section>
+
+<!------Gallery------->
+
+<section class="gallery">
+
+    <div class="full-img" id="fullImgBox">
+      <img src="./images/after2.jpeg" id="fullImg">
+      <span onclick="closeFullImg()">X</span>
+    </div>
+  <div class="img-gallery">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
+    <img src="./images/after2.jpeg" onclick="openFullImg(this.src)">
   </div>
 
-
-
-  </section>
-
-<!--------Content-------->
-
-  <section class="content">
-    <h1>Services We Offer</h1>
-    <p>We specialise in all aspects of Interior and Exterior painting and decorating, priding ourselves of a highly quality, trustworthly and reliable service. Whether you're looking to refresh your home's look or give your business a professional makeover, we have the skills and expertise to make it happen.<br><br>Utilising previous extensive experience, PaintMark Decorating was established by Mark Connelly in 2010. Based in North Chailey, East Sussex we cover a broad area with customers spanning Surrey, East sussex, Kent, West Sussex and London.
-    </p>
-
-    <div class="row">
-      <div class="content-col">
-        <h3>Painting & Decorating</h3>
-        <p>PaintMARK provide domestic and commercial painting and decorating services of high quality and at affordable and competitive rates.</p>
-      </div>
-      <div class="content-col">
-        <h3>Property Maintenance</h3>
-        <p>PaintMARK can assist in the design as well as the installation of your new room. We will ensure that your room is completed to meet your exact specifications, budget and timescale.</p>
-      </div>
-    </div>
-
-  </section>
-
-<!----Examples---->
-
-  <section class="examples">
-    <h1>Our Previous Work</h1>
-    <p>See some examples of our previous work</p>
-
-    <div class="row">
-      <div class="examples-col">
-        <img src="images/before2.jpeg">
-        <div class="layer">
-          <h3>BEFORE</h3>
-        </div>
-      </div>
-        <div class="examples-col">
-          <img src="images/after2.jpeg">
-          <div class="layer">
-            <h3>AFTER</h3>
-        </div>
-      </div>
-      <div class="examples-col">
-        <img src="images/before2.jpeg">
-        <div class="layer">
-          <h3>BEFORE</h3>
-        </div>
-      </div>
-        <div class="examples-col">
-          <img src="images/after2.jpeg">
-          <div class="layer">
-            <h3>AFTER</h3>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-<!-------Testimonials-------->
-
-<section class="testimonials">
-  <h1>What Our Customers Say</h1>
-  <p>We take great pride in the positive feedback we've received from our customers. Many have commented on the attention to detail and quality of our work, while others have appreciated our professionalism and reliability.<br>But don't take our word for it, read on to see what our clients have to say about their experience with us. We hope that their stories will inspire confidence and trust in our abilities and give you a sense of what to expect when working with our team.</p>
-
-  <div class="testimonials-row">
-    <div class="testimonials-col">
-        <div class="card-inner">
-          <div class="front1">
-            <h2>Before</h2>
-          </div>
-          <div class="back1">
-            <h2>After</h2>
-          </div>
-        </div>
-    </div>
-    <div class="testimonials-col">
-      <div class="card-inner">
-        <div class="front2">
-          <h2>Before</h2>
-        </div>
-        <div class="back2">
-          <h2>After</h2>
-        </div>
-      </div>
-    </div>
-</div>
-
-</section>
-<section class="cta">
-  <h1>Get in touch with us today to get your free quote</h1>
-  <a href="contact.html" class="hero-btn">CONTACT US</a>
 </section>
 
 <!----------Footer------------>
@@ -231,6 +159,26 @@
   function hideMenu(){
     navLinks.style.right = "-200px";
   }
+
+</script>
+
+<!-------JavaScript for Image Gallery--------->
+
+<script>
+
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
+
+  function openFullImg(pic) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+  }
+
+  function closeFullImg() {
+    fullImgBox.style.display = "none";
+  }
+
+
 
 </script>
 
