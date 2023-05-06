@@ -492,6 +492,7 @@ p{
     width: 100%;
     cursor: pointer;
     transition: 0.4s;
+    border-radius: 10px;
 }
 
 .img-gallery img:hover {
