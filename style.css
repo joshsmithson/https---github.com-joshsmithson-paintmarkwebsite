@@ -153,7 +153,7 @@ p{
 }
 .content-col{
     flex-basis: 45%;
-    background: #dff9fb;
+    background: #dff9fb75;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 0px;
@@ -531,20 +531,29 @@ p{
     width: 80%;
     margin: auto;
 }
+
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    background-color: #f6e58d7a;
 
 }
 .card{
-    background-color: #dff9fbae;
+    background-color: #dff9fb75;
     padding: 20px;
     margin: 20px;
     height: 400px;
     width: 300px;
     border-radius: 20px;
     box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.3);
+}
+.card h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+.card p {
+    padding: 0px;
+    padding-top: 10px;
+    font-size: 16px;
 }
