@@ -406,7 +406,6 @@ p{
 }
 .painting-and-decorating-col{
     flex-basis: 46%;
-    padding: 30px 2px;
 }
 
 .painting-and-decorating img {
@@ -525,4 +524,27 @@ p{
     font-size: 30px;
     color: #dff9fb;
     cursor: pointer;
+}
+
+/* ------services we offer----- */
+.services{
+    width: 80%;
+    margin: auto;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f6e58d7a;
+
+}
+.card{
+    background-color: #dff9fbae;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px 0px rgba(0,0,0,0.3);
 }
