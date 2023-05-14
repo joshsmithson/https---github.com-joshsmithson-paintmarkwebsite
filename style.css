@@ -50,6 +50,12 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+.company-name{
+    padding-left:10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
 .text-box{
     width: 90%;
     color: #fff;
