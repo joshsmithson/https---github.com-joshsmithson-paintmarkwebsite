@@ -51,10 +51,10 @@ nav img{
     width: 100%;
 }
 .company-name{
-    padding-left:10px;
     color: #fff;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
 }
 .text-box{
     width: 90%;
